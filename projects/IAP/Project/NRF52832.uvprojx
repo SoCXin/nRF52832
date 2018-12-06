@@ -379,6 +379,31 @@
       </TargetOption>
       <Groups>
         <Group>
+          <GroupName>User</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>nrf5x_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\nrf5x_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>nrf5x_bsp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\nrf5x_bsp.c</FilePath>
+            </File>
+            <File>
+              <FileName>nrf5x_bootloader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\nrf5x_bootloader.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
@@ -394,7 +419,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Driver</GroupName>
+          <GroupName>Drivers</GroupName>
           <Files>
             <File>
               <FileName>nrf5x_clock.c</FileName>
@@ -417,39 +442,9 @@
               <FilePath>..\Program\drivers\nrf5x_uart.c</FilePath>
             </File>
             <File>
-              <FileName>nrf5x_conf.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Program\nrf5x_conf.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Program</GroupName>
-          <Files>
-            <File>
-              <FileName>main.c</FileName>
+              <FileName>nrf_drv_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Program\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>nrf5x_bsp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Program\nrf5x_bsp.c</FilePath>
-            </File>
-            <File>
-              <FileName>nrf5x_bootloader.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Program\nrf5x_bootloader.c</FilePath>
-            </File>
-            <File>
-              <FileName>nrf5x_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Program\nrf5x_it.c</FilePath>
-            </File>
-            <File>
-              <FileName>boardConfig.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Program\boardConfig.h</FilePath>
+              <FilePath>..\Libraries\nRF_Components\nRF_Drivers\nrf_drv_common.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -464,30 +459,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Algorithm</GroupName>
-        </Group>
-        <Group>
-          <GroupName>nRF_Drivers</GroupName>
-          <Files>
-            <File>
-              <FileName>nrf_drv_common.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Libraries\nRF_Components\nRF_Drivers\nrf_drv_common.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>nRF_Libraries</GroupName>
+          <GroupName>Libraries</GroupName>
           <Files>
             <File>
               <FileName>sdk_errors.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Libraries\nRF_Components\nRF_Libraries\util\sdk_errors.c</FilePath>
-            </File>
-            <File>
-              <FileName>sdk_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\nRF_Components\sdk_config.h</FilePath>
             </File>
           </Files>
         </Group>
