@@ -1,18 +1,3 @@
-/**
- *      __            ____
- *     / /__ _  __   / __/                      __  
- *    / //_/(_)/ /_ / /  ___   ____ ___  __ __ / /_ 
- *   / ,<  / // __/_\ \ / _ \ / __// _ \/ // // __/ 
- *  /_/|_|/_/ \__//___// .__//_/   \___/\_,_/ \__/  
- *                    /_/   github.com/KitSprout    
- * 
- *  @file    nrf5x_conf.h
- *  @author  KitSprout
- *  @date    01-Dec-2017
- *  @brief   
- * 
- */
-
 /* Define to prevent recursive inclusion ---------------------------------------------------*/
 #ifndef __NRF5x_CONF_H
 #define __NRF5x_CONF_H
