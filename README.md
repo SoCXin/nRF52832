@@ -1,34 +1,24 @@
-﻿# [NRF52832](https://github.com/mcuyun/NRF52832) 
+﻿# [nRF52832](https://github.com/sochub/nRF52832) 
+[![sites](SoC/qitas.png)](http://www.qitas.cn) 
+####  qitas@qitas.cn
+#### 归属：[cortex M4](https://github.com/sochub/CM4) 
+#### 父级：[nordic NRF52](https://github.com/sochub/NRF52) 
 
-[![sites](mcuyun/mcuyun.png)](http://www.mcuyun.com)
+### [简介](https://github.com/sochub/nRF52832/wiki)
 
-NRF52832低功耗蓝牙资源库
+the mid-range member of the nRF52 Series SoC family. 
 
-#### 更多[MCU资源](https://github.com/mcuyun/whyme)可访问 www.mcuyun.com
+* support for Bluetooth 5, Bluetooth mesh, ANT and 2.4 GHz proprietary stacks.
+
+* Cortex™-M4 CPU with floating point unit running at 64 MHz. 
+
+* NFC-A Tag for use in simplified pairing and payment solutions.
+
+* PDM and I2S for digital microphones and audio
+ 
+[![sites](SoC/item.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
+[![sites](SoC/52832.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
+
+##  [SoC开发平台](http://www.qitas.cn)  
 
 
-## [项目简介](https://github.com/mcuyun/NRF52832/wiki) 
-
-包括NRF52832设计开发用到的资源
-
----
-
-## 组成
-
-#### [docs](https://github.com/mcuyun/NRF52832/docs) 
-
-NRF52832相关文档资料
-
-#### [hardware](https://github.com/mcuyun/NRF52832/hardware) 
-
-NRF52832硬件设计参考
-
-#### [projects](https://github.com/mcuyun/NRF52832/software) 
-
-NRF52832工程项目代码
-
----
-
-###  www.mcuyun.com  
-###  qitas@qitas.cn
-####  2018-12-6
