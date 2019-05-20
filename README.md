@@ -2,7 +2,7 @@
 
 [![sites](SoC/qitas.png)](http://www.qitas.cn) 
 
-#### 父级：[NRF52](https://github.com/sochub/NRF52) 
+#### 父级：[Nordic](https://github.com/sochub/Nordic) 
 
 #### 归属：[cortex M4](https://github.com/sochub/CM4) 
 
@@ -10,13 +10,11 @@
 
 nRF52832 SoC是一款超低功耗多协议SoC，嵌入式2.4GHz收发器，支持BLE、ANT和2.4GHz超低功耗应用。
 
-ARM®Cortex™-M4F内核64 MHz主频，支持DSP指令，内置512KB的Flash+64KB的RAM，将会有400KB的Flash可用于放置开发应用程序
+ARM®Cortex™-M4F内核64 MHz主频，支持DSP指令，内置512KB的Flash+64KB的RAM，将会有400KB的Flash可用于放置开发应用程序。
 
-nRF52832芯片支持NFC-A，可以作为NFC Tag使用
+nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密，12位ADC，可在1.7V - 3.6V的电源电压下工作。
 
-在nRF51822的基础上几乎将功耗降低了一半，有-96dBm的射频接收灵敏度
-
-AES硬件加密，12位ADC，可在1.7V - 3.6V的电源电压下工作
+相比前代产品nRF51822功耗几乎降低了一半，有接近-96dBm的射频接收灵敏度。
 
 [![sites](SoC/item.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
 [![sites](SoC/52832.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
@@ -28,6 +26,8 @@ AES硬件加密，12位ADC，可在1.7V - 3.6V的电源电压下工作
 	* [芯片手册](docs/)
 * [参考资源](src/)
 * [demo工程](demo/)
+
+[![sites](docs/nRF52832.png)](https://github.com/sochub/nRF52832)  
 
 ### [选型建议](https://github.com/sochub/nRF52832)
 
