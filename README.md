@@ -35,6 +35,9 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 
 [![sites](docs/nRF52832.png)](https://github.com/sochub/nRF52832)  
 
+* [Eagle资源](src/Eagle)
+* [kicad资源](src/kicad)
+
 ### [选型建议](https://github.com/sochub/nRF52832)
 
 [nRF52832](https://github.com/sochub/nRF52832)是一款性能非常强大的明星BLE SoC产品，芯片综合实力强大，网络参考资源非常丰富，非常适合应用于原型开发，特别是对NFC tag有需求的产品。
