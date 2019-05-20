@@ -14,7 +14,7 @@ ARM®Cortex™-M4F内核64 MHz主频，支持DSP指令，内置512KB的Flash+64K
 
 nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密，12位ADC，可在1.7V - 3.6V的电源电压下工作。
 
-相比前代产品nRF51822功耗几乎降低了一半，有接近-96dBm的射频接收灵敏度。
+相比前代产品nRF51822功耗几乎降低了一半，有接近-96dBm的射频接收灵敏度,-30dBm — 4dBm的宽幅输出功率调节。
 
 [![sites](SoC/item.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
 [![sites](SoC/52832.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
@@ -27,6 +27,12 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 * [参考资源](src/)
 * [demo工程](demo/)
 
+官方资源下载 [SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK)
+
+#### [硬件设计资源](https://github.com/sochub/nRF52832)
+
+封装：QFN48 (QFAA) 
+
 [![sites](docs/nRF52832.png)](https://github.com/sochub/nRF52832)  
 
 ### [选型建议](https://github.com/sochub/nRF52832)
@@ -36,7 +42,6 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 [nRF52832](https://github.com/sochub/nRF52832)的市场竞争对手为TI SimpleLink系列的[CC2640](https://github.com/sochub/CC2640)，Nordic的产品相比TI产品在开发工具和资源策略上不同，Nordic产品的性能更强但TI的低功耗更好。
 
 对于片上资源升级替换方案，或则需要支持Zigbee等更多无线协议可选[nRF52840](https://github.com/sochub/nRF52840)或[CC2650](https://github.com/sochub/CC2650)，当然新入局的国产WCH的[CH579](https://github.com/sochub/CH579)也可以考虑下。
-
 
 ##  [SoC资源平台](http://www.qitas.cn)  
 
