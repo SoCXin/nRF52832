@@ -31,12 +31,14 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 
 #### [硬件设计资源](https://github.com/sochub/nRF52832)
 
-封装：QFN48 (QFAA) 
+封装：QFN48 (QFAA 6mm x 6mm) 
 
 [![sites](docs/nRF52832.png)](https://github.com/sochub/nRF52832)  
 
 * [Eagle资源](src/Eagle)
 * [kicad资源](src/kicad)
+	* [kicad参考设计](src/kicad/demo)
+	* [kicad模型库](src/kicad/libs)
 
 ### [选型建议](https://github.com/sochub/nRF52832)
 
