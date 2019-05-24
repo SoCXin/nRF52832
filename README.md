@@ -25,6 +25,7 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 * [参考文档](docs/)
 	* [芯片手册](docs/)
 * [参考资源](src/)
+	* [keil例程](src/keil)
 * [demo工程](demo/)
 
 官方资源下载 [SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK)
@@ -35,10 +36,11 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 
 [![sites](docs/nRF52832.png)](https://github.com/sochub/nRF52832)  
 
-* [Eagle资源](src/Eagle)
 * [kicad资源](src/kicad)
 	* [kicad参考设计](src/kicad/demo)
 	* [kicad模型库](src/kicad/libs)
+
+[![sites](docs/sch.png)](https://github.com/sochub/nRF52832)  
 
 ### [选型建议](https://github.com/sochub/nRF52832)
 
