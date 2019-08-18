@@ -1,11 +1,8 @@
 ﻿# [nRF52832](https://github.com/sochub/nRF52832) 
-
 [![sites](SoC/qitas.png)](http://www.qitas.cn) 
-
-#### 父级：[Nordic](https://github.com/sochub/Nordic) 
-
+#### 厂商：[Nordic](https://github.com/sochub/Nordic) 
 #### 归属：[cortex M4](https://github.com/sochub/CM4) 
-
+#### 芯片定级：[Level](https://github.com/sochub/Level)
 ### [nRF52832简介](https://github.com/sochub/nRF52832/wiki)
 
 nRF52832 SoC是一款超低功耗多协议SoC，嵌入式2.4GHz收发器，支持BLE、ANT和2.4GHz超低功耗应用。
@@ -23,7 +20,6 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 ### [收录资源](https://github.com/sochub/nRF52832)
 
 * [参考文档](docs/)
-	* [芯片手册](docs/)
 * [参考资源](src/)
 	* [keil例程](src/keil)
 * [demo工程](demo/)
@@ -40,9 +36,13 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 	* [kicad参考设计](src/kicad/demo)
 	* [kicad模型库](src/kicad/libs)
 
-[![sites](docs/sch.png)](https://github.com/sochub/nRF52832)  
+[![sites](docs/sch.png)](https://github.com/sochub/nRF52832)
 
-### [选型建议](https://github.com/sochub/nRF52832)
+### [关联资源](https://github.com/sochub)
+
+* [arm-none-eabi编译器](https://github.com/sochub/arm-none-eabi)
+
+### [选型建议](https://github.com/sochub)
 
 [nRF52832](https://github.com/sochub/nRF52832)是一款性能非常强大的明星BLE SoC产品，芯片综合实力强大，网络参考资源非常丰富，非常适合应用于原型开发，特别是对NFC tag有需求的产品。
 

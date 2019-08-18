@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'IK-52832DK-TEST' 
+ * Project: 'nRF52832' 
  * Target:  'flash_s132_nrf52_6.1.0_softdevice' 
  */
 

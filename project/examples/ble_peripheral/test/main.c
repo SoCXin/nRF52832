@@ -1,4 +1,3 @@
-//IK-52832DK V2¿ªÏä²âÊÔ
 #include <stdint.h>
 #include <string.h>
 #include "nordic_common.h"
