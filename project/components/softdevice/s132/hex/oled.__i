@@ -1,7 +1,0 @@
---c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\..\config -I ..\config --reduce_paths
--I.\RTE\Device\nRF52832_xxAA
--I.\RTE\_flash_s132_nrf52_6.1.0_softdevice
--IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include
--IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include
--D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -D__HEAP_SIZE="8192" -D__STACK_SIZE="8192"
--o ..\..\..\..\..\..\components\softdevice\s132\hex\oled.o --omf_browse ..\..\..\..\..\..\components\softdevice\s132\hex\oled.crf --depend ..\..\..\..\..\..\components\softdevice\s132\hex\oled.d "..\..\..\..\..\..\oled\oled.c"
