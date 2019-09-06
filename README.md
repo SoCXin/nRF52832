@@ -1,13 +1,13 @@
 ﻿# [nRF52832](https://github.com/sochub/nRF52832) 
 [![sites](SoC/qitas.png)](http://www.qitas.cn) 
 #### 厂商：[Nordic](https://github.com/sochub/Nordic) 
-#### 归属：[cortex M4](https://github.com/sochub/CM4) 
+#### 内核：[cortex M4](https://github.com/sochub/CM4) 
 #### 芯片定级：[Level](https://github.com/sochub/Level)
-### [nRF52832简介](https://github.com/sochub/nRF52832/wiki)
+### [芯片简介](https://github.com/sochub/nRF52832/wiki)
 
 nRF52832 SoC是一款超低功耗多协议SoC，嵌入式2.4GHz收发器，支持BLE、ANT和2.4GHz超低功耗应用。
 
-ARM®Cortex™-M4F内核64 MHz主频，支持DSP指令，内置512KB的Flash+64KB的RAM，将会有400KB的Flash可用于放置开发应用程序。
+64 MHz的32位 ARM® Cortex™-M4F处理器，64 MHz主频，与竞争者的解决方案相比，提供多出60%的通用处理能力以及十倍浮点和两倍数字信号处理(DSP)性能。nRF52832器件的2.4 GHz多协议无线电完全兼容蓝牙4.2规范，并且具有-96 dB RX 灵敏度和5.5 mA 峰值RX/TX电流。nRF52832 还具有512 kB Flash和64 kB RAM，有400KB的Flash可用于放置开发应用程序，以及优化的全自动功耗管理系统。
 
 nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密，12位ADC，可在1.7V - 3.6V的电源电压下工作。
 
@@ -16,6 +16,9 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 [![sites](SoC/item.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
 [![sites](SoC/52832.png)](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832) 
 
+### [重点介绍](https://github.com/sochub/nRF52832)
+
+Nordic的战略之一是密切支持创客和爱好者社群，基于该芯片的Arduino Primo方案引出了相应的开源资源，在Arduino的世界占有一定的位置，相对其对手多了更多平台和工具的选择。由于PIO的平台适配，所以在选择快速开发蓝牙产品上可以优先选择。
 
 ### [收录资源](https://github.com/sochub/nRF52832)
 
