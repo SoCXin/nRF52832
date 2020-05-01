@@ -26,6 +26,7 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 
 * [开源项目](https://github.com/NordicSemiconductor)
 * [官方SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK)
+* [platformIO](https://platformio.org/platforms/nordicnrf52)
 
 #### [硬件设计资源](https://github.com/SoCXin/nRF52832)
 
@@ -33,9 +34,11 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 
 [![sites](docs/sch.png)](https://github.com/SoCXin/nRF52832)
 
-### [关联资源](https://github.com/SoCXin)
+### [开源项目](https://github.com/SoCXin)
 
-* [arm-none-eabi编译](https://github.com/SoCXin/arm-none-eabi)
+* [nrf52832-mdk](https://github.com/makerdiary/nrf52832-mdk)
+* [RT-Thread](https://github.com/Zero-Free/nrf52832-nimble)
+* [nRF52832开发指南](https://github.com/HX-IoT/nRF52832-Developer-Guide)
 
 ### [选型建议](https://github.com/SoCXin)
 
@@ -43,7 +46,5 @@ nRF52832芯片支持NFC-A，可以作为NFC Tag使用，包括了AES硬件加密
 
 [nRF52832](https://github.com/SoCXin/nRF52832)的市场竞争对手为TI SimpleLink系列的[CC2640](https://github.com/SoCXin/CC2640)，Nordic的产品相比TI产品在开发工具和资源策略上不同，Nordic产品的性能更强但TI的低功耗更好。
 
-
-##  [SoC资源平台](http://www.qitas.cn)  
-
+###  [SoC芯平台](http://SoC.Xin) 
 
