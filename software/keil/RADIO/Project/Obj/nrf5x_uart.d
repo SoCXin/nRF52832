@@ -1,0 +1,16 @@
+.\obj\nrf5x_uart.o: ..\Program\drivers\nrf5x_uart.c
+.\obj\nrf5x_uart.o: ..\Program\drivers\nrf5x_system.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include\nrf.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include\nrf52.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include\system_nrf52.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include\nrf52_bitfields.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include\nrf51_to_nrf52.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include\nrf52_name_change.h
+.\obj\nrf5x_uart.o: C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include\compiler_abstraction.h
+.\obj\nrf5x_uart.o: ..\Program\nrf5x_conf.h

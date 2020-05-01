@@ -1,0 +1,854 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.IRQEvent_SerialRecv) refers to serial.o(i.Serial_RecvByte) for Serial_RecvByte
+    main.o(i.IRQEvent_SerialRecv) refers to serial.o(i.Serial_SendByte) for Serial_SendByte
+    main.o(i.IRQEvent_SerialRecv) refers to printf1.o(i.__0printf$1) for __2printf
+    main.o(i.main) refers to nrf5x_bsp.o(i.BSP_CLOCK_Config) for BSP_CLOCK_Config
+    main.o(i.main) refers to nrf5x_bsp.o(i.BSP_GPIO_Config) for BSP_GPIO_Config
+    main.o(i.main) refers to nrf5x_bsp.o(i.BSP_UART_SERIAL_Config) for BSP_UART_SERIAL_Config
+    main.o(i.main) refers to serial.o(i.Serial_RecvDataWaitTimeout) for Serial_RecvDataWaitTimeout
+    main.o(i.main) refers to serial.o(i.Serial_SendDataWaitTimeout) for Serial_SendDataWaitTimeout
+    main.o(i.main) refers to printf1.o(i.__0printf$1) for __2printf
+    main.o(i.main) refers to nrf5x_delay.o(i.delay_ms) for delay_ms
+    main.o(i.main) refers to main.o(.data) for .data
+    main.o(i.main) refers to main.o(.bss) for .bss
+    main.o(i.main) refers to main.o(i.IRQEvent_SerialRecv) for IRQEvent_SerialRecv
+    nrf5x_it.o(i.UARTE0_UART0_IRQHandler) refers to serial.o(.data) for hSerial
+    nrf5x_bsp.o(i.BSP_CLOCK_Config) refers to nrf5x_clock.o(i.CLOCK_Config) for CLOCK_Config
+    nrf5x_bsp.o(i.BSP_GPIO_Config) refers to nrf5x_bsp.o(i.nrf_gpio_cfg_output) for nrf_gpio_cfg_output
+    nrf5x_bsp.o(i.BSP_GPIO_Config) refers to nrf5x_bsp.o(i.nrf_gpio_cfg) for nrf_gpio_cfg
+    nrf5x_bsp.o(i.BSP_UART_SERIAL_Config) refers to serial.o(i.Serial_Config) for Serial_Config
+    nrf5x_bsp.o(i.BSP_UART_SERIAL_Config) refers to printf1.o(i.__0printf$1) for __2printf
+    nrf5x_bsp.o(i.BSP_UART_SERIAL_Config) refers to serial.o(.data) for hSerial
+    nrf5x_bsp.o(i.nrf_gpio_cfg_output) refers to nrf5x_bsp.o(i.nrf_gpio_cfg) for nrf_gpio_cfg
+    system_nrf52.o(i.SystemCoreClockUpdate) refers to system_nrf52.o(.data) for .data
+    system_nrf52.o(i.SystemInit) refers to system_nrf52.o(.data) for .data
+    arm_startup_nrf52.o(RESET) refers to arm_startup_nrf52.o(STACK) for __initial_sp
+    arm_startup_nrf52.o(RESET) refers to arm_startup_nrf52.o(.text) for Reset_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.NMI_Handler) for NMI_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.HardFault_Handler) for HardFault_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.MemoryManagement_Handler) for MemoryManagement_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.BusFault_Handler) for BusFault_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.UsageFault_Handler) for UsageFault_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.SVC_Handler) for SVC_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.PendSV_Handler) for PendSV_Handler
+    arm_startup_nrf52.o(RESET) refers to nrf5x_it.o(i.UARTE0_UART0_IRQHandler) for UARTE0_UART0_IRQHandler
+    arm_startup_nrf52.o(.text) refers to system_nrf52.o(i.SystemInit) for SystemInit
+    arm_startup_nrf52.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    nrf5x_clock.o(i.CLOCK_Config) refers to nrf5x_clock.o(i.CLOCK_Init) for CLOCK_Init
+    nrf5x_clock.o(i.CLOCK_Config) refers to nrf5x_clock.o(.bss) for .bss
+    nrf5x_delay.o(i.delay_ms) refers to nrf5x_delay.o(i.nrf_delay_us) for nrf_delay_us
+    nrf5x_delay.o(i.delay_us) refers to nrf5x_delay.o(i.nrf_delay_us) for nrf_delay_us
+    nrf5x_delay.o(i.nrf_delay_us) refers to system_nrf52.o(.data) for SystemCoreClock
+    nrf5x_uart.o(i.UART_Init) refers to nrf5x_uart.o(i.nrf_gpio_cfg_output) for nrf_gpio_cfg_output
+    nrf5x_uart.o(i.UART_Init) refers to nrf5x_uart.o(i.nrf_gpio_cfg_input) for nrf_gpio_cfg_input
+    nrf5x_uart.o(i.UART_Init) refers to nrf5x_uart.o(i.UART_Start) for UART_Start
+    nrf5x_uart.o(i.UART_RecvDataWaitTimeout) refers to nrf5x_delay.o(i.delay_us) for delay_us
+    nrf5x_uart.o(i.UART_SendDataWaitTimeout) refers to nrf5x_delay.o(i.delay_us) for delay_us
+    nrf5x_uart.o(i.nrf_gpio_cfg_input) refers to nrf5x_uart.o(i.nrf_gpio_cfg) for nrf_gpio_cfg
+    nrf5x_uart.o(i.nrf_gpio_cfg_output) refers to nrf5x_uart.o(i.nrf_gpio_cfg) for nrf_gpio_cfg
+    serial.o(i.Serial_Config) refers to nrf5x_uart.o(i.UART_Init) for UART_Init
+    serial.o(i.Serial_Config) refers to nrf5x_uart.o(i.UART_InterruptCmd) for UART_InterruptCmd
+    serial.o(i.Serial_Config) refers to nrf5x_uart.o(i.UART_Cmd) for UART_Cmd
+    serial.o(i.Serial_Config) refers to serial.o(.data) for .data
+    serial.o(i.fgetc) refers to serial.o(.data) for .data
+    serial.o(i.fputc) refers to serial.o(.data) for .data
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to serial.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to serial.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to serial.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to serial.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to serial.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to serial.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to serial.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to serial.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to serial.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to serial.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to serial.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to serial.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to serial.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to serial.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to serial.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to serial.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to serial.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to serial.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to serial.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to serial.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to serial.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to serial.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to serial.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to serial.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to serial.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to serial.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to serial.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to serial.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to serial.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to serial.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to serial.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to serial.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to serial.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to serial.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to serial.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to serial.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to serial.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to serial.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to serial.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to serial.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to serial.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to serial.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to serial.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to serial.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to arm_startup_nrf52.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to arm_startup_nrf52.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    serial.o(i.Serial_SendByte) refers to nrf5x_uart.o(i.UART_SendByte) for UART_SendByte
+    serial.o(i.Serial_SendByte) refers to serial.o(.data) for .data
+    serial.o(i.Serial_RecvByte) refers to nrf5x_uart.o(i.UART_RecvByte) for UART_RecvByte
+    serial.o(i.Serial_RecvByte) refers to serial.o(.data) for .data
+    serial.o(i.Serial_SendData) refers to nrf5x_uart.o(i.UART_SendData) for UART_SendData
+    serial.o(i.Serial_SendData) refers to serial.o(.data) for .data
+    serial.o(i.Serial_RecvData) refers to nrf5x_uart.o(i.UART_RecvData) for UART_RecvData
+    serial.o(i.Serial_RecvData) refers to serial.o(.data) for .data
+    serial.o(i.Serial_SendDataWaitTimeout) refers to nrf5x_uart.o(i.UART_SendDataWaitTimeout) for UART_SendDataWaitTimeout
+    serial.o(i.Serial_SendDataWaitTimeout) refers to serial.o(.data) for .data
+    serial.o(i.Serial_RecvDataWaitTimeout) refers to nrf5x_uart.o(i.UART_RecvDataWaitTimeout) for UART_RecvDataWaitTimeout
+    serial.o(i.Serial_RecvDataWaitTimeout) refers to serial.o(.data) for .data
+    serial.o(i.Serial_RecvDataContinuous) refers to nrf5x_uart.o(i.UART_RecvDataContinuous) for UART_RecvDataContinuous
+    serial.o(i.Serial_RecvDataContinuous) refers to serial.o(.data) for .data
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing nrf5x_it.o(.rev16_text), (4 bytes).
+    Removing nrf5x_it.o(.revsh_text), (4 bytes).
+    Removing nrf5x_it.o(.rrx_text), (6 bytes).
+    Removing nrf5x_bsp.o(.rev16_text), (4 bytes).
+    Removing nrf5x_bsp.o(.revsh_text), (4 bytes).
+    Removing nrf5x_bsp.o(.rrx_text), (6 bytes).
+    Removing system_nrf52.o(.rev16_text), (4 bytes).
+    Removing system_nrf52.o(.revsh_text), (4 bytes).
+    Removing system_nrf52.o(.rrx_text), (6 bytes).
+    Removing system_nrf52.o(i.SystemCoreClockUpdate), (16 bytes).
+    Removing arm_startup_nrf52.o(HEAP), (8192 bytes).
+    Removing nrf5x_clock.o(.rev16_text), (4 bytes).
+    Removing nrf5x_clock.o(.revsh_text), (4 bytes).
+    Removing nrf5x_clock.o(.rrx_text), (6 bytes).
+    Removing nrf5x_delay.o(.rev16_text), (4 bytes).
+    Removing nrf5x_delay.o(.revsh_text), (4 bytes).
+    Removing nrf5x_delay.o(.rrx_text), (6 bytes).
+    Removing nrf5x_delay.o(i.delay_nop), (16 bytes).
+    Removing nrf5x_uart.o(.rev16_text), (4 bytes).
+    Removing nrf5x_uart.o(.revsh_text), (4 bytes).
+    Removing nrf5x_uart.o(.rrx_text), (6 bytes).
+    Removing nrf5x_uart.o(i.UART_RecvData), (48 bytes).
+    Removing nrf5x_uart.o(i.UART_RecvDataContinuous), (50 bytes).
+    Removing nrf5x_uart.o(i.UART_SendData), (46 bytes).
+    Removing nrf5x_uart.o(i.UART_Stop), (8 bytes).
+    Removing nrf_drv_common.o(.rev16_text), (4 bytes).
+    Removing nrf_drv_common.o(.revsh_text), (4 bytes).
+    Removing nrf_drv_common.o(.rrx_text), (6 bytes).
+    Removing nrf_drv_common.o(i.nrf_drv_common_clock_irq_disable), (12 bytes).
+    Removing nrf_drv_common.o(i.nrf_drv_common_irq_enable), (56 bytes).
+    Removing serial.o(.rev16_text), (4 bytes).
+    Removing serial.o(.revsh_text), (4 bytes).
+    Removing serial.o(.rrx_text), (6 bytes).
+    Removing serial.o(i.fgetc), (32 bytes).
+    Removing dadd.o(.text), (334 bytes).
+    Removing dmul.o(.text), (228 bytes).
+    Removing ddiv.o(.text), (222 bytes).
+    Removing dfixul.o(.text), (48 bytes).
+    Removing cdrcmple.o(.text), (48 bytes).
+    Removing depilogue.o(.text), (186 bytes).
+    Removing serial.o(i.Serial_SendData), (16 bytes).
+    Removing serial.o(i.Serial_RecvData), (16 bytes).
+    Removing serial.o(i.Serial_RecvDataContinuous), (12 bytes).
+
+46 unused section(s) (total 9712 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section     1024  arm_startup_nrf52.o(RESET)
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ..\..\Libraries\CMSIS\arm_startup_nrf52.s 0x00000000   Number         0  arm_startup_nrf52.o ABSOLUTE
+    ..\..\Libraries\CMSIS\system_nrf52.c     0x00000000   Number         0  system_nrf52.o ABSOLUTE
+    ..\..\Libraries\nRF_Components\nRF_Drivers\nrf_drv_common.c 0x00000000   Number         0  nrf_drv_common.o ABSOLUTE
+    ..\..\Libraries\nRF_Components\nRF_Libraries\util\sdk_errors.c 0x00000000   Number         0  sdk_errors.o ABSOLUTE
+    ..\Program\drivers\nrf5x_clock.c         0x00000000   Number         0  nrf5x_clock.o ABSOLUTE
+    ..\Program\drivers\nrf5x_delay.c         0x00000000   Number         0  nrf5x_delay.o ABSOLUTE
+    ..\Program\drivers\nrf5x_uart.c          0x00000000   Number         0  nrf5x_uart.o ABSOLUTE
+    ..\Program\main.c                        0x00000000   Number         0  main.o ABSOLUTE
+    ..\Program\modules\serial.c              0x00000000   Number         0  serial.o ABSOLUTE
+    ..\Program\nrf5x_bsp.c                   0x00000000   Number         0  nrf5x_bsp.o ABSOLUTE
+    ..\Program\nrf5x_it.c                    0x00000000   Number         0  nrf5x_it.o ABSOLUTE
+    ..\\..\\Libraries\\CMSIS\\system_nrf52.c 0x00000000   Number         0  system_nrf52.o ABSOLUTE
+    ..\\..\\Libraries\\nRF_Components\\nRF_Drivers\\nrf_drv_common.c 0x00000000   Number         0  nrf_drv_common.o ABSOLUTE
+    ..\\Program\\drivers\\nrf5x_clock.c      0x00000000   Number         0  nrf5x_clock.o ABSOLUTE
+    ..\\Program\\drivers\\nrf5x_delay.c      0x00000000   Number         0  nrf5x_delay.o ABSOLUTE
+    ..\\Program\\drivers\\nrf5x_uart.c       0x00000000   Number         0  nrf5x_uart.o ABSOLUTE
+    ..\\Program\\main.c                      0x00000000   Number         0  main.o ABSOLUTE
+    ..\\Program\\modules\\serial.c           0x00000000   Number         0  serial.o ABSOLUTE
+    ..\\Program\\nrf5x_bsp.c                 0x00000000   Number         0  nrf5x_bsp.o ABSOLUTE
+    ..\\Program\\nrf5x_it.c                  0x00000000   Number         0  nrf5x_it.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000400   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000400   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000404   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000408   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000408   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000408   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000410   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000410   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000410   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000410   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000414   Section       36  arm_startup_nrf52.o(.text)
+    $v0                                      0x00000414   Number         0  arm_startup_nrf52.o(.text)
+    .text                                    0x00000438   Section        0  uidiv.o(.text)
+    .text                                    0x00000464   Section       36  init.o(.text)
+    i.BSP_CLOCK_Config                       0x00000488   Section        0  nrf5x_bsp.o(i.BSP_CLOCK_Config)
+    i.BSP_GPIO_Config                        0x0000048c   Section        0  nrf5x_bsp.o(i.BSP_GPIO_Config)
+    i.BSP_UART_SERIAL_Config                 0x000004c4   Section        0  nrf5x_bsp.o(i.BSP_UART_SERIAL_Config)
+    i.BusFault_Handler                       0x000004f0   Section        0  nrf5x_it.o(i.BusFault_Handler)
+    i.CLOCK_Config                           0x000004f4   Section        0  nrf5x_clock.o(i.CLOCK_Config)
+    i.CLOCK_Init                             0x00000508   Section        0  nrf5x_clock.o(i.CLOCK_Init)
+    i.HardFault_Handler                      0x00000568   Section        0  nrf5x_it.o(i.HardFault_Handler)
+    i.IRQEvent_SerialRecv                    0x0000056c   Section        0  main.o(i.IRQEvent_SerialRecv)
+    i.MemoryManagement_Handler               0x0000059c   Section        0  nrf5x_it.o(i.MemoryManagement_Handler)
+    i.NMI_Handler                            0x0000059e   Section        0  nrf5x_it.o(i.NMI_Handler)
+    i.PendSV_Handler                         0x000005a0   Section        0  nrf5x_it.o(i.PendSV_Handler)
+    i.SVC_Handler                            0x000005a2   Section        0  nrf5x_it.o(i.SVC_Handler)
+    i.Serial_Config                          0x000005a4   Section        0  serial.o(i.Serial_Config)
+    i.Serial_RecvByte                        0x000005e0   Section        0  serial.o(i.Serial_RecvByte)
+    i.Serial_RecvDataWaitTimeout             0x000005f4   Section        0  serial.o(i.Serial_RecvDataWaitTimeout)
+    i.Serial_SendByte                        0x00000604   Section        0  serial.o(i.Serial_SendByte)
+    i.Serial_SendDataWaitTimeout             0x00000614   Section        0  serial.o(i.Serial_SendDataWaitTimeout)
+    i.SystemInit                             0x00000624   Section        0  system_nrf52.o(i.SystemInit)
+    i.UARTE0_UART0_IRQHandler                0x00000858   Section        0  nrf5x_it.o(i.UARTE0_UART0_IRQHandler)
+    i.UART_Cmd                               0x00000864   Section        0  nrf5x_uart.o(i.UART_Cmd)
+    i.UART_Init                              0x00000876   Section        0  nrf5x_uart.o(i.UART_Init)
+    i.UART_InterruptCmd                      0x000008da   Section        0  nrf5x_uart.o(i.UART_InterruptCmd)
+    i.UART_RecvByte                          0x000008ec   Section        0  nrf5x_uart.o(i.UART_RecvByte)
+    i.UART_RecvDataWaitTimeout               0x00000908   Section        0  nrf5x_uart.o(i.UART_RecvDataWaitTimeout)
+    i.UART_SendByte                          0x0000095c   Section        0  nrf5x_uart.o(i.UART_SendByte)
+    i.UART_SendDataWaitTimeout               0x00000978   Section        0  nrf5x_uart.o(i.UART_SendDataWaitTimeout)
+    i.UART_Start                             0x000009ca   Section        0  nrf5x_uart.o(i.UART_Start)
+    i.UsageFault_Handler                     0x000009e4   Section        0  nrf5x_it.o(i.UsageFault_Handler)
+    i.__0printf$1                            0x000009e8   Section        0  printf1.o(i.__0printf$1)
+    i.__scatterload_copy                     0x00000a08   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000a16   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000a18   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x00000a28   Section        0  printf1.o(i._printf_core)
+    _printf_core                             0x00000a29   Thumb Code   336  printf1.o(i._printf_core)
+    i.delay_ms                               0x00000b7c   Section        0  nrf5x_delay.o(i.delay_ms)
+    i.delay_us                               0x00000b96   Section        0  nrf5x_delay.o(i.delay_us)
+    i.fputc                                  0x00000ba0   Section        0  serial.o(i.fputc)
+    i.main                                   0x00000bc0   Section        0  main.o(i.main)
+    i.nrf_delay_us                           0x00000c9c   Section        0  nrf5x_delay.o(i.nrf_delay_us)
+    nrf_delay_us                             0x00000c9d   Thumb Code   132  nrf5x_delay.o(i.nrf_delay_us)
+    i.nrf_gpio_cfg                           0x00000d28   Section        0  nrf5x_bsp.o(i.nrf_gpio_cfg)
+    nrf_gpio_cfg                             0x00000d29   Thumb Code    36  nrf5x_bsp.o(i.nrf_gpio_cfg)
+    i.nrf_gpio_cfg                           0x00000d4c   Section        0  nrf5x_uart.o(i.nrf_gpio_cfg)
+    nrf_gpio_cfg                             0x00000d4d   Thumb Code    36  nrf5x_uart.o(i.nrf_gpio_cfg)
+    i.nrf_gpio_cfg_input                     0x00000d70   Section        0  nrf5x_uart.o(i.nrf_gpio_cfg_input)
+    nrf_gpio_cfg_input                       0x00000d71   Thumb Code    18  nrf5x_uart.o(i.nrf_gpio_cfg_input)
+    i.nrf_gpio_cfg_output                    0x00000d82   Section        0  nrf5x_bsp.o(i.nrf_gpio_cfg_output)
+    nrf_gpio_cfg_output                      0x00000d83   Thumb Code    20  nrf5x_bsp.o(i.nrf_gpio_cfg_output)
+    i.nrf_gpio_cfg_output                    0x00000d96   Section        0  nrf5x_uart.o(i.nrf_gpio_cfg_output)
+    nrf_gpio_cfg_output                      0x00000d97   Thumb Code    20  nrf5x_uart.o(i.nrf_gpio_cfg_output)
+    .data                                    0x20000000   Section        1  main.o(.data)
+    i                                        0x20000000   Data           1  main.o(.data)
+    .data                                    0x20000004   Section        4  system_nrf52.o(.data)
+    __tagsym$$used                           0x20000004   Number         0  system_nrf52.o(.data)
+    .data                                    0x20000008   Section       28  serial.o(.data)
+    .data                                    0x20000024   Section        4  stdout.o(.data)
+    .bss                                     0x20000028   Section       16  main.o(.bss)
+    recvData                                 0x20000028   Data          16  main.o(.bss)
+    .bss                                     0x20000038   Section       20  nrf5x_clock.o(.bss)
+    STACK                                    0x20000050   Section     8192  arm_startup_nrf52.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  arm_startup_nrf52.o(RESET)
+    _printf_a                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_c                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_charcount                        0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_d                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_e                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_f                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_flags                            0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_fp_dec                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_fp_hex                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_g                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_i                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_int_dec                          0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_l                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lc                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_ll                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lld                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lli                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llo                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llu                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llx                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_dec                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_hex                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_oct                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_ls                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_mbtowc                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_n                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_o                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_p                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_percent                          0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_pre_padding                      0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_s                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_str                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_truncate_signed                  0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_truncate_unsigned                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_u                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_wc                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_wctomb                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_x                                0x00000000   Number         0  stubs.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x00000400   Data           0  arm_startup_nrf52.o(RESET)
+    __Vectors_Size                           0x00000400   Number         0  arm_startup_nrf52.o ABSOLUTE
+    __main                                   0x00000401   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000401   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000405   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000409   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000409   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000409   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000409   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000411   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000411   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x00000415   Thumb Code     8  arm_startup_nrf52.o(.text)
+    DebugMon_Handler                         0x00000429   Thumb Code     2  arm_startup_nrf52.o(.text)
+    SysTick_Handler                          0x0000042d   Thumb Code     2  arm_startup_nrf52.o(.text)
+    CCM_AAR_IRQHandler                       0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    COMP_LPCOMP_IRQHandler                   0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    ECB_IRQHandler                           0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    FPU_IRQHandler                           0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    GPIOTE_IRQHandler                        0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    I2S_IRQHandler                           0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    MWU_IRQHandler                           0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    NFCT_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    PDM_IRQHandler                           0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    POWER_CLOCK_IRQHandler                   0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    PWM0_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    PWM1_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    PWM2_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    QDEC_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    RADIO_IRQHandler                         0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    RNG_IRQHandler                           0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    RTC0_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    RTC1_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    RTC2_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SAADC_IRQHandler                         0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler 0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQHandler 0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SPIM2_SPIS2_SPI2_IRQHandler              0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SWI0_EGU0_IRQHandler                     0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SWI1_EGU1_IRQHandler                     0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SWI2_EGU2_IRQHandler                     0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SWI3_EGU3_IRQHandler                     0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SWI4_EGU4_IRQHandler                     0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    SWI5_EGU5_IRQHandler                     0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    TEMP_IRQHandler                          0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    TIMER0_IRQHandler                        0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    TIMER1_IRQHandler                        0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    TIMER2_IRQHandler                        0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    TIMER3_IRQHandler                        0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    TIMER4_IRQHandler                        0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    WDT_IRQHandler                           0x0000042f   Thumb Code     0  arm_startup_nrf52.o(.text)
+    __aeabi_uidiv                            0x00000439   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x00000439   Thumb Code    44  uidiv.o(.text)
+    __scatterload                            0x00000465   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000465   Thumb Code     0  init.o(.text)
+    BSP_CLOCK_Config                         0x00000489   Thumb Code     4  nrf5x_bsp.o(i.BSP_CLOCK_Config)
+    BSP_GPIO_Config                          0x0000048d   Thumb Code    52  nrf5x_bsp.o(i.BSP_GPIO_Config)
+    BSP_UART_SERIAL_Config                   0x000004c5   Thumb Code    20  nrf5x_bsp.o(i.BSP_UART_SERIAL_Config)
+    BusFault_Handler                         0x000004f1   Thumb Code     2  nrf5x_it.o(i.BusFault_Handler)
+    CLOCK_Config                             0x000004f5   Thumb Code    16  nrf5x_clock.o(i.CLOCK_Config)
+    CLOCK_Init                               0x00000509   Thumb Code    90  nrf5x_clock.o(i.CLOCK_Init)
+    HardFault_Handler                        0x00000569   Thumb Code     2  nrf5x_it.o(i.HardFault_Handler)
+    IRQEvent_SerialRecv                      0x0000056d   Thumb Code    38  main.o(i.IRQEvent_SerialRecv)
+    MemoryManagement_Handler                 0x0000059d   Thumb Code     2  nrf5x_it.o(i.MemoryManagement_Handler)
+    NMI_Handler                              0x0000059f   Thumb Code     2  nrf5x_it.o(i.NMI_Handler)
+    PendSV_Handler                           0x000005a1   Thumb Code     2  nrf5x_it.o(i.PendSV_Handler)
+    SVC_Handler                              0x000005a3   Thumb Code     2  nrf5x_it.o(i.SVC_Handler)
+    Serial_Config                            0x000005a5   Thumb Code    52  serial.o(i.Serial_Config)
+    Serial_RecvByte                          0x000005e1   Thumb Code    16  serial.o(i.Serial_RecvByte)
+    Serial_RecvDataWaitTimeout               0x000005f5   Thumb Code    12  serial.o(i.Serial_RecvDataWaitTimeout)
+    Serial_SendByte                          0x00000605   Thumb Code    12  serial.o(i.Serial_SendByte)
+    Serial_SendDataWaitTimeout               0x00000615   Thumb Code    12  serial.o(i.Serial_SendDataWaitTimeout)
+    SystemInit                               0x00000625   Thumb Code   520  system_nrf52.o(i.SystemInit)
+    UARTE0_UART0_IRQHandler                  0x00000859   Thumb Code     6  nrf5x_it.o(i.UARTE0_UART0_IRQHandler)
+    UART_Cmd                                 0x00000865   Thumb Code    18  nrf5x_uart.o(i.UART_Cmd)
+    UART_Init                                0x00000877   Thumb Code   100  nrf5x_uart.o(i.UART_Init)
+    UART_InterruptCmd                        0x000008db   Thumb Code    18  nrf5x_uart.o(i.UART_InterruptCmd)
+    UART_RecvByte                            0x000008ed   Thumb Code    28  nrf5x_uart.o(i.UART_RecvByte)
+    UART_RecvDataWaitTimeout                 0x00000909   Thumb Code    82  nrf5x_uart.o(i.UART_RecvDataWaitTimeout)
+    UART_SendByte                            0x0000095d   Thumb Code    28  nrf5x_uart.o(i.UART_SendByte)
+    UART_SendDataWaitTimeout                 0x00000979   Thumb Code    82  nrf5x_uart.o(i.UART_SendDataWaitTimeout)
+    UART_Start                               0x000009cb   Thumb Code    26  nrf5x_uart.o(i.UART_Start)
+    UsageFault_Handler                       0x000009e5   Thumb Code     2  nrf5x_it.o(i.UsageFault_Handler)
+    __0printf$1                              0x000009e9   Thumb Code    22  printf1.o(i.__0printf$1)
+    __1printf$1                              0x000009e9   Thumb Code     0  printf1.o(i.__0printf$1)
+    __2printf                                0x000009e9   Thumb Code     0  printf1.o(i.__0printf$1)
+    __scatterload_copy                       0x00000a09   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000a17   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000a19   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    delay_ms                                 0x00000b7d   Thumb Code    26  nrf5x_delay.o(i.delay_ms)
+    delay_us                                 0x00000b97   Thumb Code    10  nrf5x_delay.o(i.delay_us)
+    fputc                                    0x00000ba1   Thumb Code    28  serial.o(i.fputc)
+    main                                     0x00000bc1   Thumb Code   164  main.o(i.main)
+    Region$$Table$$Base                      0x00000dac   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000dcc   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x20000004   Data           4  system_nrf52.o(.data)
+    hSerial                                  0x20000008   Data          28  serial.o(.data)
+    __stdout                                 0x20000024   Data           4  stdout.o(.data)
+    hclk                                     0x20000038   Data          20  nrf5x_clock.o(.bss)
+    __initial_sp                             0x20002050   Data           0  arm_startup_nrf52.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000401
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000df4, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000dcc, Max: 0x00080000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000400   Data   RO          324    RESET               arm_startup_nrf52.o
+    0x00000400   0x00000400   0x00000000   Code   RO          670  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000400   0x00000400   0x00000004   Code   RO          934    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000404   0x00000404   0x00000004   Code   RO          937    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000408   0x00000408   0x00000000   Code   RO          939    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000408   0x00000408   0x00000000   Code   RO          941    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000408   0x00000408   0x00000008   Code   RO          942    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000410   0x00000410   0x00000000   Code   RO          944    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000410   0x00000410   0x00000000   Code   RO          946    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000410   0x00000410   0x00000004   Code   RO          935    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000414   0x00000414   0x00000024   Code   RO          325    .text               arm_startup_nrf52.o
+    0x00000438   0x00000438   0x0000002c   Code   RO          949    .text               mc_w.l(uidiv.o)
+    0x00000464   0x00000464   0x00000024   Code   RO          964    .text               mc_w.l(init.o)
+    0x00000488   0x00000488   0x00000004   Code   RO          230    i.BSP_CLOCK_Config  nrf5x_bsp.o
+    0x0000048c   0x0000048c   0x00000038   Code   RO          231    i.BSP_GPIO_Config   nrf5x_bsp.o
+    0x000004c4   0x000004c4   0x0000002c   Code   RO          232    i.BSP_UART_SERIAL_Config  nrf5x_bsp.o
+    0x000004f0   0x000004f0   0x00000002   Code   RO          164    i.BusFault_Handler  nrf5x_it.o
+    0x000004f2   0x000004f2   0x00000002   PAD
+    0x000004f4   0x000004f4   0x00000014   Code   RO          332    i.CLOCK_Config      nrf5x_clock.o
+    0x00000508   0x00000508   0x00000060   Code   RO          333    i.CLOCK_Init        nrf5x_clock.o
+    0x00000568   0x00000568   0x00000002   Code   RO          165    i.HardFault_Handler  nrf5x_it.o
+    0x0000056a   0x0000056a   0x00000002   PAD
+    0x0000056c   0x0000056c   0x00000030   Code   RO            4    i.IRQEvent_SerialRecv  main.o
+    0x0000059c   0x0000059c   0x00000002   Code   RO          166    i.MemoryManagement_Handler  nrf5x_it.o
+    0x0000059e   0x0000059e   0x00000002   Code   RO          167    i.NMI_Handler       nrf5x_it.o
+    0x000005a0   0x000005a0   0x00000002   Code   RO          168    i.PendSV_Handler    nrf5x_it.o
+    0x000005a2   0x000005a2   0x00000002   Code   RO          169    i.SVC_Handler       nrf5x_it.o
+    0x000005a4   0x000005a4   0x0000003c   Code   RO          579    i.Serial_Config     serial.o
+    0x000005e0   0x000005e0   0x00000014   Code   RO          618    i.Serial_RecvByte   serial.o
+    0x000005f4   0x000005f4   0x00000010   Code   RO          642    i.Serial_RecvDataWaitTimeout  serial.o
+    0x00000604   0x00000604   0x00000010   Code   RO          612    i.Serial_SendByte   serial.o
+    0x00000614   0x00000614   0x00000010   Code   RO          636    i.Serial_SendDataWaitTimeout  serial.o
+    0x00000624   0x00000624   0x00000234   Code   RO          283    i.SystemInit        system_nrf52.o
+    0x00000858   0x00000858   0x0000000c   Code   RO          170    i.UARTE0_UART0_IRQHandler  nrf5x_it.o
+    0x00000864   0x00000864   0x00000012   Code   RO          409    i.UART_Cmd          nrf5x_uart.o
+    0x00000876   0x00000876   0x00000064   Code   RO          410    i.UART_Init         nrf5x_uart.o
+    0x000008da   0x000008da   0x00000012   Code   RO          411    i.UART_InterruptCmd  nrf5x_uart.o
+    0x000008ec   0x000008ec   0x0000001c   Code   RO          412    i.UART_RecvByte     nrf5x_uart.o
+    0x00000908   0x00000908   0x00000052   Code   RO          415    i.UART_RecvDataWaitTimeout  nrf5x_uart.o
+    0x0000095a   0x0000095a   0x00000002   PAD
+    0x0000095c   0x0000095c   0x0000001c   Code   RO          416    i.UART_SendByte     nrf5x_uart.o
+    0x00000978   0x00000978   0x00000052   Code   RO          418    i.UART_SendDataWaitTimeout  nrf5x_uart.o
+    0x000009ca   0x000009ca   0x0000001a   Code   RO          419    i.UART_Start        nrf5x_uart.o
+    0x000009e4   0x000009e4   0x00000002   Code   RO          171    i.UsageFault_Handler  nrf5x_it.o
+    0x000009e6   0x000009e6   0x00000002   PAD
+    0x000009e8   0x000009e8   0x00000020   Code   RO          718    i.__0printf$1       mc_w.l(printf1.o)
+    0x00000a08   0x00000a08   0x0000000e   Code   RO          976    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000a16   0x00000a16   0x00000002   Code   RO          977    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000a18   0x00000a18   0x0000000e   Code   RO          978    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000a26   0x00000a26   0x00000002   PAD
+    0x00000a28   0x00000a28   0x00000154   Code   RO          725    i._printf_core      mc_w.l(printf1.o)
+    0x00000b7c   0x00000b7c   0x0000001a   Code   RO          365    i.delay_ms          nrf5x_delay.o
+    0x00000b96   0x00000b96   0x0000000a   Code   RO          367    i.delay_us          nrf5x_delay.o
+    0x00000ba0   0x00000ba0   0x00000020   Code   RO          581    i.fputc             serial.o
+    0x00000bc0   0x00000bc0   0x000000dc   Code   RO            5    i.main              main.o
+    0x00000c9c   0x00000c9c   0x0000008c   Code   RO          368    i.nrf_delay_us      nrf5x_delay.o
+    0x00000d28   0x00000d28   0x00000024   Code   RO          233    i.nrf_gpio_cfg      nrf5x_bsp.o
+    0x00000d4c   0x00000d4c   0x00000024   Code   RO          421    i.nrf_gpio_cfg      nrf5x_uart.o
+    0x00000d70   0x00000d70   0x00000012   Code   RO          422    i.nrf_gpio_cfg_input  nrf5x_uart.o
+    0x00000d82   0x00000d82   0x00000014   Code   RO          234    i.nrf_gpio_cfg_output  nrf5x_bsp.o
+    0x00000d96   0x00000d96   0x00000014   Code   RO          423    i.nrf_gpio_cfg_output  nrf5x_uart.o
+    0x00000daa   0x00000daa   0x00000002   PAD
+    0x00000dac   0x00000dac   0x00000020   Data   RO          974    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00000dcc, Size: 0x00002050, Max: 0x00008000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000dcc   0x00000001   Data   RW            7    .data               main.o
+    0x20000001   0x00000dcd   0x00000003   PAD
+    0x20000004   0x00000dd0   0x00000004   Data   RW          284    .data               system_nrf52.o
+    0x20000008   0x00000dd4   0x0000001c   Data   RW          582    .data               serial.o
+    0x20000024   0x00000df0   0x00000004   Data   RW          948    .data               mc_w.l(stdout.o)
+    0x20000028        -       0x00000010   Zero   RW            6    .bss                main.o
+    0x20000038        -       0x00000014   Zero   RW          334    .bss                nrf5x_clock.o
+    0x2000004c   0x00000df4   0x00000004   PAD
+    0x20000050        -       0x00002000   Zero   RW          322    STACK               arm_startup_nrf52.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        36          8       1024          0       8192        852   arm_startup_nrf52.o
+       268         66          0          1         16      39005   main.o
+       160         28          0          0          0       7410   nrf5x_bsp.o
+       116         10          0          0         20       1623   nrf5x_clock.o
+       176          8          0          0          0       1934   nrf5x_delay.o
+        26          6          0          0          0       3630   nrf5x_it.o
+       456          0          0          0          0       7194   nrf5x_uart.o
+       160         28          0         28          0      30563   serial.o
+       564         44          0          4          0       2291   system_nrf52.o
+
+    ----------------------------------------------------------------------
+      1972        198       1056         36       8232      94502   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        10          0          0          3          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+       372         14          0          0          0        184   printf1.o
+         0          0          0          4          0          0   stdout.o
+        44          0          0          0          0         80   uidiv.o
+
+    ----------------------------------------------------------------------
+       504         30          0          4          0        332   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       502         30          0          4          0        332   mc_w.l
+
+    ----------------------------------------------------------------------
+       504         30          0          4          0        332   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2476        228       1056         40       8232      91786   Grand Totals
+      2476        228       1056         40       8232      91786   ELF Image Totals
+      2476        228       1056         40          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3532 (   3.45kB)
+    Total RW  Size (RW Data + ZI Data)              8272 (   8.08kB)
+    Total ROM Size (Code + RO Data + RW Data)       3572 (   3.49kB)
+
+==============================================================================
+

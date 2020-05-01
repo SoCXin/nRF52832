@@ -1,0 +1,15 @@
+.\obj\nrf5x_delay.o: ..\Program\drivers\nrf5x_delay.c
+.\obj\nrf5x_delay.o: ..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_delay.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\nRF_Components\nRF_Device\nrf.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\nRF_Components\nRF_Device\nrf52.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\CMSIS\core_cm4.h
+.\obj\nrf5x_delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\CMSIS\core_cmInstr.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\CMSIS\cmsis_armcc.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\CMSIS\core_cmFunc.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\CMSIS\core_cmSimd.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\CMSIS\system_nrf52.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h
+.\obj\nrf5x_delay.o: ..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h

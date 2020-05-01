@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp
+".\obj\main.o"
+".\obj\nrf5x_it.o"
+".\obj\nrf5x_bsp.o"
+".\obj\system_nrf52.o"
+".\obj\arm_startup_nrf52.o"
+".\obj\nrf5x_clock.o"
+".\obj\nrf5x_delay.o"
+".\obj\nrf_drv_common.o"
+".\obj\sdk_errors.o"
+--library_type=microlib --strict --scatter ".\Obj\NRF52832.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\List\NRF52832.map" -o .\Obj\NRF52832.axf

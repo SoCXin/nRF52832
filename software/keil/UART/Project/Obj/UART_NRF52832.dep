@@ -1,0 +1,312 @@
+Dependencies for Project 'UART', Target 'NRF52832': (DO NOT MODIFY !)
+F (..\Program\main.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (..\Program\drivers\nrf5x_system.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+I (..\Program\nrf5x_conf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_clock.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_gpio.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52832_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nrf_assert.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error_weak.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_uart.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_delay.h)(0x5D4195BC)
+I (..\Program\boardConfig.h)(0x5D4195BC)
+I (..\Program\algorithms\mathUnit.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\arm_math.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\Program\modules\serial.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_uart.h)(0x5D4195BC)
+I (..\Program\nrf5x_bsp.h)(0x5D4195BC)
+F (..\Program\nrf5x_it.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\nrf5x_it.o --omf_browse .\obj\nrf5x_it.crf --depend .\obj\nrf5x_it.d)
+I (..\Program\drivers\nrf5x_system.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+I (..\Program\nrf5x_conf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_clock.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_gpio.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52832_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nrf_assert.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error_weak.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_uart.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_delay.h)(0x5D4195BC)
+I (..\Program\boardConfig.h)(0x5D4195BC)
+I (..\Program\algorithms\mathUnit.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\arm_math.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\Program\modules\serial.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_uart.h)(0x5D4195BC)
+F (..\Program\nrf5x_bsp.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\nrf5x_bsp.o --omf_browse .\obj\nrf5x_bsp.crf --depend .\obj\nrf5x_bsp.d)
+I (..\Program\drivers\nrf5x_system.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+I (..\Program\nrf5x_conf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_clock.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_gpio.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52832_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nrf_assert.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error_weak.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_uart.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_delay.h)(0x5D4195BC)
+I (..\Program\boardConfig.h)(0x5D4195BC)
+I (..\Program\algorithms\mathUnit.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\arm_math.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\Program\drivers\nrf5x_clock.h)(0x5D4195BC)
+I (..\Program\modules\serial.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_uart.h)(0x5D4195BC)
+I (..\Program\nrf5x_bsp.h)(0x5D4195BC)
+F (..\..\Libraries\CMSIS\system_nrf52.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\system_nrf52.o --omf_browse .\obj\system_nrf52.crf --depend .\obj\system_nrf52.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+F (..\..\Libraries\CMSIS\arm_startup_nrf52.s)(0x5D4195BC)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1" --pd "NRF52 SETA 1"--list .\list\arm_startup_nrf52.lst --xref -o .\obj\arm_startup_nrf52.o --depend .\obj\arm_startup_nrf52.d)
+F (..\Program\drivers\nrf5x_clock.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\nrf5x_clock.o --omf_browse .\obj\nrf5x_clock.crf --depend .\obj\nrf5x_clock.d)
+I (..\Program\drivers\nrf5x_system.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+I (..\Program\nrf5x_conf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_clock.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_gpio.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52832_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nrf_assert.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error_weak.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_uart.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_delay.h)(0x5D4195BC)
+I (..\Program\boardConfig.h)(0x5D4195BC)
+I (..\Program\algorithms\mathUnit.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\arm_math.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\Program\drivers\nrf5x_clock.h)(0x5D4195BC)
+F (..\Program\drivers\nrf5x_delay.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\nrf5x_delay.o --omf_browse .\obj\nrf5x_delay.crf --depend .\obj\nrf5x_delay.d)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_delay.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+F (..\Program\drivers\nrf5x_uart.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\nrf5x_uart.o --omf_browse .\obj\nrf5x_uart.crf --depend .\obj\nrf5x_uart.d)
+I (..\Program\drivers\nrf5x_system.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+I (..\Program\nrf5x_conf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_clock.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_gpio.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52832_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nrf_assert.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error_weak.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_uart.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_delay.h)(0x5D4195BC)
+I (..\Program\boardConfig.h)(0x5D4195BC)
+I (..\Program\algorithms\mathUnit.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\arm_math.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\Program\drivers\nrf5x_uart.h)(0x5D4195BC)
+F (..\..\Libraries\nRF_Components\nRF_Drivers\nrf_drv_common.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\nrf_drv_common.o --omf_browse .\obj\nrf_drv_common.crf --depend .\obj\nrf_drv_common.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\nrf_drv_common.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_common.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_os.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_util.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_macros.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nrf_assert.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error_weak.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_util_platform.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52832_peripherals.h)(0x5D4195BC)
+F (..\Program\modules\serial.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\serial.o --omf_browse .\obj\serial.crf --depend .\obj\serial.d)
+I (..\Program\drivers\nrf5x_system.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cm4.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\CMSIS\core_cmInstr.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\cmsis_armcc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmFunc.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\core_cmSimd.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\system_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_bitfields.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf51_to_nrf52.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52_name_change.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\compiler_abstraction.h)(0x5D4195BC)
+I (..\Program\nrf5x_conf.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_clock.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_gpio.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Device\nrf52832_peripherals.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nrf_assert.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\app_error_weak.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_uart.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_delay.h)(0x5D4195BC)
+I (..\Program\boardConfig.h)(0x5D4195BC)
+I (..\Program\algorithms\mathUnit.h)(0x5D4195BC)
+I (..\..\Libraries\CMSIS\arm_math.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\Program\modules\serial.h)(0x5D4195BC)
+I (..\Program\drivers\nrf5x_uart.h)(0x5D4195BC)
+F (..\..\Libraries\nRF_Components\nRF_Libraries\util\sdk_errors.c)(0x5D4195BC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\Libraries\CMSIS -I ..\..\Libraries\nRF_Components -I ..\..\Libraries\nRF_Components\nRF_Device -I ..\..\Libraries\nRF_Components\nRF_Drivers -I ..\..\Libraries\nRF_Components\nRF_Drivers\inc -I ..\..\Libraries\nRF_Components\nRF_Libraries -I ..\..\Libraries\nRF_Components\nRF_Libraries\inc -I ..\Program -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\dfu -I ..\..\Libraries\nRF_Components\nRF_Libraries\bootloader\ble_dfu-I.\RTE\_NRF52832-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DNRF52 -DNRF52 -DNRF52832 -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\obj\sdk_errors.o --omf_browse .\obj\sdk_errors.crf --depend .\obj\sdk_errors.d)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\sdk_errors.h)(0x5D4195BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\nRF_Components\nRF_Drivers\inc\nrf_error.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\sdk_config.h)(0x5D4195BC)
+I (..\..\Libraries\nRF_Components\nRF_Libraries\inc\nordic_common.h)(0x5D4195BC)
